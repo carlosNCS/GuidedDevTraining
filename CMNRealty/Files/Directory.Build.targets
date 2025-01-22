@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/CMNRealty/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/CMNRealty/Data/**" />
+		<Compile Remove="$(PkgPath)/CMNRealty/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/CMNRealty/Schemas\**" />
+		<Compile Remove="$(PkgPath)/CMNRealty/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/CMNRealty/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/CMNRealty/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/CMNRealty/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/CMNRealty/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/CMNRealty/Resources/**" />
+		<None Remove="$(PkgPath)/CMNRealty/Assemblies/**" />
+		<None Remove="$(PkgPath)/CMNRealty/Data/**" />
+		<None Remove="$(PkgPath)/CMNRealty/SqlScripts/**" />
+		<None Remove="$(PkgPath)/CMNRealty/Schemas/**" />
+		<None Remove="$(PkgPath)/CMNRealty/Resources/**" />
+  </ItemGroup>
+</Project>
