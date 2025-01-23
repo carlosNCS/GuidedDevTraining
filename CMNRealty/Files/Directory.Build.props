@@ -1,3 +1,5 @@
 <Project>
-	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''"></ItemGroup>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/CMNRealty/Schemas/CMNCarBodyType/CMNCarBodyType.cs" Condition="Exists('$(PkgPath)/CMNRealty/Schemas/CMNCarBodyType/CMNCarBodyType.cs')" />
+	</ItemGroup>
 </Project>
