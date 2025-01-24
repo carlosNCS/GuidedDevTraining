@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c9609d23-a0ef-4d63-ba90-68dd6e18e713",
+    "Name": "CMNVwContactAgeDays",
+    "ModifiedOnUtc": "\/Date(1737684812000)\/",
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Contact age in days view",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,1 @@
+delete from CMNCarBodyType where Name = '7. Excavator'

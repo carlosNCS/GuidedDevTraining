@@ -8,11 +8,11 @@
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
-          "Value": ""
+          "Value": "some description"
         },
         {
           "SchemaColumnUId": "c8856ff6-f7b2-3e9d-20ef-733191776ddc",
-          "Value": "CCC"
+          "Value": "C"
         },
         {
           "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -57,26 +57,6 @@
         {
           "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
           "Value": "\/Date(1737594562905-0400)\/"
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "63429348-711e-4e55-af0c-7300b47cc2f0"
-        },
-        {
-          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
-          "Value": ""
-        },
-        {
-          "SchemaColumnUId": "c8856ff6-f7b2-3e9d-20ef-733191776ddc",
-          "Value": "EX"
-        },
-        {
-          "SchemaColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
-          "Value": "\/Date(1737597206544-0400)\/"
         }
       ]
     },

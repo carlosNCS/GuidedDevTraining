@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Contact age in days view" />
+			<Item Name="Columns.CMNAgeDays.Caption" Value="Age in days" />
+			<Item Name="Columns.CMNBirthDate.Caption" Value="Birthdate" />
+			<Item Name="Columns.CMNContact.Caption" Value="Parent contact" />
+			<Item Name="Columns.CMNId.Caption" Value="Id" />
+			<Item Name="Columns.CMNName.Caption" Value="Name" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>
