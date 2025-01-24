@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "7e2bce40-e6a0-4358-b287-338a66fc91f4",
+    "Name": "CMNRealtyRelatedPage",
+    "ModifiedOnUtc": "\/Date(1737686586000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty (Page settings)",
+    "DependsOn": []
+  }
+}

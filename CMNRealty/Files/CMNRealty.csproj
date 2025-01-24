@@ -545,6 +545,9 @@
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
 		<Compile Remove="$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNCarBodyType/CMNCarBodyType.cs" Condition="Exists('$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNCarBodyType/CMNCarBodyType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNRealty/CMNRealty.cs" Condition="Exists('$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNRealty/CMNRealty.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNRealtyOfferType/CMNRealtyOfferType.cs" Condition="Exists('$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNRealtyOfferType/CMNRealtyOfferType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNRealtyType/CMNRealtyType.cs" Condition="Exists('$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNRealtyType/CMNRealtyType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNVwContactAgeDays/CMNVwContactAgeDays.cs" Condition="Exists('$(RelativePkgFolderPath)/CMNRealty/Schemas/CMNVwContactAgeDays/CMNVwContactAgeDays.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>

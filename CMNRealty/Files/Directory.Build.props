@@ -1,6 +1,9 @@
 <Project>
 	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
 		<Compile Include="$(PkgPath)/CMNRealty/Schemas/CMNCarBodyType/CMNCarBodyType.cs" Condition="Exists('$(PkgPath)/CMNRealty/Schemas/CMNCarBodyType/CMNCarBodyType.cs')" />
+		<Compile Include="$(PkgPath)/CMNRealty/Schemas/CMNRealty/CMNRealty.cs" Condition="Exists('$(PkgPath)/CMNRealty/Schemas/CMNRealty/CMNRealty.cs')" />
+		<Compile Include="$(PkgPath)/CMNRealty/Schemas/CMNRealtyOfferType/CMNRealtyOfferType.cs" Condition="Exists('$(PkgPath)/CMNRealty/Schemas/CMNRealtyOfferType/CMNRealtyOfferType.cs')" />
+		<Compile Include="$(PkgPath)/CMNRealty/Schemas/CMNRealtyType/CMNRealtyType.cs" Condition="Exists('$(PkgPath)/CMNRealty/Schemas/CMNRealtyType/CMNRealtyType.cs')" />
 		<Compile Include="$(PkgPath)/CMNRealty/Schemas/CMNVwContactAgeDays/CMNVwContactAgeDays.cs" Condition="Exists('$(PkgPath)/CMNRealty/Schemas/CMNVwContactAgeDays/CMNVwContactAgeDays.cs')" />
 	</ItemGroup>
 </Project>
