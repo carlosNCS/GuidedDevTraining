@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "121f3a27-a453-4f68-9d6b-57dba8f51cb3",
+    "Name": "CMNRealtyBusinessRule",
+    "ModifiedOnUtc": "\/Date(1738005438000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty (Business rules)",
+    "DependsOn": []
+  }
+}

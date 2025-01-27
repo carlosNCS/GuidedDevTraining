@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "af0ef5cd-fef4-4c2e-9d27-66b7d367fbe6",
+    "Name": "CMNRealty_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1738003729000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty form page (Business rules)",
+    "DependsOn": []
+  }
+}

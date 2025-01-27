@@ -3,6 +3,19 @@ define("CMNRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "Tabs",
+				"values": {
+					"styleType": "default",
+					"mode": "tab",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"selectedTabTitleColor": "auto",
+					"tabTitleColor": "auto",
+					"underlineSelectedTabColor": "auto",
+					"headerBackgroundColor": "auto"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "CardToggleTabPanel",
 				"values": {
 					"styleType": "default",
@@ -138,6 +151,29 @@ define("CMNRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "Commission",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 5,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_CMNCommission_dke9acs",
+					"labelPosition": "auto",
+					"control": "$PDS_CMNCommission_dke9acs",
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "RealtyType",
 				"values": {
 					"layoutConfig": {
@@ -204,11 +240,118 @@ define("CMNRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"label": "$Resources.Strings.PDS_CMNComments_d2ant2o",
 					"labelPosition": "auto",
 					"control": "$PDS_CMNComments_d2ant2o",
-					"multiline": false
+					"multiline": false,
+					"visible": false,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Manager",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_CMNManager_rdqcr0x",
+					"labelPosition": "auto",
+					"control": "$PDS_CMNManager_rdqcr0x",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": [],
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "Country",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_CMNCountry_5p1vltn",
+					"labelPosition": "auto",
+					"control": "$PDS_CMNCountry_5p1vltn",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": [],
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "City",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_CMNCity_vnkcoou",
+					"labelPosition": "auto",
+					"control": "$PDS_CMNCity_vnkcoou",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": [],
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "Percent",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"row": 4,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_CMNOfferTypeCMNCommissionPercent",
+					"control": "$PDS_CMNOfferTypeCMNCommissionPercent",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 6
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -226,12 +369,32 @@ define("CMNRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"PDS_CMNPrice_b71h26b": {
 						"modelConfig": {
 							"path": "PDS.CMNPrice"
+						},
+                      "validators": {
+							"MySuperValidator": {
+								"type": "CMN.DGValidator",
+								"params": {
+									"minValue": 50,
+									"message": "#ResourceString(PriceCannotBeLess)#"
+								}
+							}
 						}
+
 					},
 					"PDS_CMNArea_uga23rf": {
 						"modelConfig": {
 							"path": "PDS.CMNArea"
+						},
+                      "validators": {
+							"MySuperValidator": {
+								"type": "CMN.DGValidator",
+								"params": {
+									"minValue": 100,
+									"message": "#ResourceString(AreaCannotBeLess)#"
+								}
+							}
 						}
+
 					},
 					"PDS_CMNNumber_mzxmwkh": {
 						"modelConfig": {
@@ -251,6 +414,31 @@ define("CMNRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"PDS_CMNComments_d2ant2o": {
 						"modelConfig": {
 							"path": "PDS.CMNComments"
+						}
+					},
+					"PDS_CMNManager_rdqcr0x": {
+						"modelConfig": {
+							"path": "PDS.CMNManager"
+						}
+					},
+					"PDS_CMNCountry_5p1vltn": {
+						"modelConfig": {
+							"path": "PDS.CMNCountry"
+						}
+					},
+					"PDS_CMNCity_vnkcoou": {
+						"modelConfig": {
+							"path": "PDS.CMNCity"
+						}
+					},
+					"PDS_CMNCommission_dke9acs": {
+						"modelConfig": {
+							"path": "PDS.CMNCommission"
+						}
+					},
+					"PDS_CMNOfferTypeCMNCommissionPercent": {
+						"modelConfig": {
+  							"path": "PDS.CMNOfferTypeCMNCommissionPercent"
 						}
 					}
 				}
@@ -284,7 +472,13 @@ define("CMNRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "CMNRealty"
+							"entitySchemaName": "CMNRealty",
+							"attributes": {
+								"CMNOfferTypeCMNCommissionPercent": {
+									"path": "CMNOfferType.CMNCommissionPercent",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					}
@@ -305,8 +499,59 @@ define("CMNRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					return next?.handle(request);
 				}
 			},
+
+          {
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+      					if (request.attributeName === 'PDS_CMNPrice_b71h26b' || 				             // if price changed
+					   request.attributeName === 'PDS_CMNOfferTypeCMNCommissionPercent' ) { 		// or percent changed
+						var price = await request.$context.PDS_CMNPrice_b71h26b;
+						var percent = await request.$context.PDS_CMNOfferTypeCMNCommissionPercent;
+						var commission = price * percent / 100;
+						request.$context.PDS_CMNCommission_dke9acs = commission;
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			}
+
         ]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+          
+          /* The validator type must contain a vendor prefix.
+			Format the validator type in PascalCase. */
+			"CMN.DGValidator": {
+  				validator: function (config) {
+  					return function (control) {
+  						let value = control.value;
+  						let minValue = config.minValue;
+  						let valueIsCorrect = value >= minValue;
+  						var result;
+  						if (valueIsCorrect) {
+  							result = null;
+  						} else {
+  							result = {
+  								"CMN.DGValidator": { 
+  									message: config.message
+  								}
+  							};
+  						}
+  						return result;
+  					};
+  				},
+  				params: [
+  					{
+  						name: "minValue"
+  					},
+  					{
+  						name: "message"
+  					}
+  				],
+  				async: false
+  			}
+
+        }/**SCHEMA_VALIDATORS*/
 	};
 });
