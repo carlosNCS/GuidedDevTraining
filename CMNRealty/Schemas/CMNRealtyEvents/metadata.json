@@ -1,0 +1,24 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "SourceCodeSchemaManager",
+      "UId": "123c89a9-25ce-4284-8f6b-3970cd7aa48a",
+      "A2": "CMNRealtyEvents",
+      "A5": "f9b3d5b0-2aef-4fa0-a664-c3638f708779",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "7d053cea-bbc2-0044-1217-50e4ae29fbc6",
+          "A2": "ValueIsTooBig",
+          "A3": "123c89a9-25ce-4284-8f6b-3970cd7aa48a",
+          "A4": "123c89a9-25ce-4284-8f6b-3970cd7aa48a",
+          "A5": "f9b3d5b0-2aef-4fa0-a664-c3638f708779"
+        }
+      ],
+      "B3": [],
+      "B6": "c6b50902-2100-42a5-84da-7a592e5f09e9",
+      "B8": "8.2.0.4183",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3"
+    }
+  }
+}

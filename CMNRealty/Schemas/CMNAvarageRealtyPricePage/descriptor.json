@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "0dbbb5de-90e6-4570-b6de-95bb2b043bbd",
+    "Name": "CMNAvarageRealtyPricePage",
+    "ModifiedOnUtc": "\/Date(1738212803000)\/",
+    "Parent": {
+      "UId": "27e1b215-163a-4b82-b0a6-9872a8dde6e4",
+      "Name": "PageWithTopAreaAndTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Average realty price page"
+  }
+}

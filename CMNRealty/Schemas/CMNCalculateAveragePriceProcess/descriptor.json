@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "3f2b1145-9e25-4ffe-857e-eb7776abddc2",
+    "Name": "CMNCalculateAveragePriceProcess",
+    "ModifiedOnUtc": "\/Date(1738213339000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Calculate average realty price process",
+    "DependsOn": []
+  }
+}

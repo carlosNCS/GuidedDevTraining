@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "80727939-8279-448b-ac19-dcccf40a560b",
+    "Name": "CMNRealtyVisitRelatedPage",
+    "ModifiedOnUtc": "\/Date(1738112320000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty Visit (Page settings)",
+    "DependsOn": []
+  }
+}

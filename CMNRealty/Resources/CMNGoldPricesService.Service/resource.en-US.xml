@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="https://link.idbanking.am" />
+			<Item Name="ServiceMethods.CMNMethod1.Caption" Value="/api/Rate/Gold" />
+			<Item Name="ServiceMethods.CMNMethod1.Response.Parameters.CMNCSList.Caption" Value="CashSellList" />
+			<Item Name="ServiceMethods.CMNMethod1.Response.Parameters.CMNCSList.ItemProperties.CMNCSLRate.Caption" Value="Rate" />
+			<Item Name="ServiceMethods.CMNMethod1.Response.Parameters.CMNCSList.ItemProperties.CMNCSLWeight.Caption" Value="Weight" />
+		</Items>
+	</Group>
+</Resources>

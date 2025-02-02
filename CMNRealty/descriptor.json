@@ -3,14 +3,21 @@
     "UId": "c6b50902-2100-42a5-84da-7a592e5f09e9",
     "Name": "CMNRealty",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1737561371000)\/",
+    "ModifiedOnUtc": "\/Date(1738122504000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/CMNRealty.csproj",
+    "Description": "Useless change just for ModiefiedOn",
     "DependsOn": [
       {
         "UId": "012e2e14-082b-ac2b-da5a-2fc87bad41d4",
         "PackageVersion": "7.8.0",
         "Name": "CrtCore",
+        "Type": 1
+      },
+      {
+        "UId": "2ecba2bd-b810-47a5-a1b1-08c888529d6c",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCustomer360App",
         "Type": 1
       }
     ]

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "67637e8a-4fca-4bf3-89ae-f3d0d52a7bbd",
+    "Name": "CMNGoldPrice",
+    "ModifiedOnUtc": "\/Date(1738453710000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Gold price",
+    "DependsOn": []
+  }
+}

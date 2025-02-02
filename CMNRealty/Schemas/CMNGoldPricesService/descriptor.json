@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a0e31dd2-92fe-4032-872a-50f71923aa65",
+    "Name": "CMNGoldPricesService",
+    "ModifiedOnUtc": "\/Date(1738459099000)\/",
+    "ManagerName": "ServiceSchemaManager",
+    "Caption": "https://link.idbanking.am",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "ad96ddd6-bf23-46ed-a9ea-d320f441680d",
+    "Name": "CMNRealtyVisit",
+    "ModifiedOnUtc": "\/Date(1738361848000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Visit",
+    "DependsOn": []
+  }
+}

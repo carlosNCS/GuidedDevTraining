@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ffd2e819-5ea2-431c-9ba1-dd842ef02893",
+    "Name": "CMNAddRealtyVisitsProcess",
+    "ModifiedOnUtc": "\/Date(1738361421000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Add realty visits",
+    "DependsOn": []
+  }
+}
